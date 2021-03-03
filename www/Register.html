@@ -1,0 +1,72 @@
+      <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header headModalF">
+                <h4 class="modal-title text-center" id="myModalLabel">Registrarse</h4>
+            </div>
+            <div class="modal-body text-right">
+                <input type="hidden"  name="dondetwo"  id="dondetwo">
+  
+                  <div class="form-group row">                    
+                    <div class="col-md-6">
+                    <input type="text" class="form-control validate_form" id="nomape" name="nomape" placeholder="Nombres y Apellidos" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group row">                    
+                    <div class="col-md-6">
+                    <input type="number" class="form-control validate_form" id="docudi" name="docudi" placeholder="Documento de Identidad" autocomplete="off" required>
+                    </div>
+
+                </div>
+                <div class="form-group row">                    
+                    <div class="col-md-6">
+                    <input type="email" class="form-control validate_form" id="usuario" name="usuario" placeholder="Correo" autocomplete="off" required>
+                    </div>
+
+                </div>
+                <div class="form-group row">                    
+                    <div class="col-md-6">
+                    <input type="number" class="form-control validate_form" id="telefon" name="telefon" placeholder="Telefono" autocomplete="off" required>
+                    </div>
+
+                </div>
+
+                      <div class="form-group row">                    
+                    <div class="col-md-6">
+<div>
+  <input type="password" class="form-control validate_form" name="clave" id="clave" aria-label="Recipient's username" placeholder="contraseña" aria-describedby="basic-addon2">
+  <div class="">
+    <a href="javascript:void(0)" class="input-group-text btn vercontra" onclick="vercontra()" id="basic-addon2">Ver</a>
+    <a href="javascript:void(0)" class="input-group-text btn novercontra" onclick="novercontra()" id="basic-addon2" style="display: none;">Ocultar</a>
+  </div>
+</div>
+                    </div>
+                    </div>
+                                <div class="form-group row">                    
+                    <div class="col-md-6">
+<div >
+  <input type="password" class="form-control validate_form" name="repeat_clave" id="repeat_clave" placeholder="Repita Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div >
+    <a href="javascript:void(0)" class="input-group-text btn vercontrare" onclick="vercontrare()" id="basic-addon2">Ver</a>
+    <a href="javascript:void(0)" class="input-group-text btn novercontrare" onclick="novercontrare()" id="basic-addon2" style="display: none;">Ocultar</a>
+  </div>
+</div>
+                    </div>
+
+                </div>
+
+            </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" href="javascript:void(0)" onclick="registrar_datos()">Ingresar</button>
+                    <button type="button" class="btn btn-danger" onclick="content_view(1)">Volver</button>
+                  </div>
+                  <div class="login-res" ></div>
+                  <div class="modal-footer">
+                  <p>Iniciar con:</p><br>
+                  <a href="javascript:void(0)" onclick="gplusLogin()"><img width="50" height="50" src="https://www.desdecasa.ec/desdecasaDeveloper/view/img/google.png"></a>
+                       <a href="javascript:void(0)"><img width="40" height="40" src="https://www.desdecasa.ec/desdecasaDeveloper/view/img/facebbok.png"></a>
+                  </div>
+                                                <div class="modal-footer">
+                    <a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal" data-target="#modal-recuperacion" class="negroLetra ">¿Olvido su contraseña?</a> |
+                    <a href="javascript:void(0)" class="negroLetra" data-dismiss="modal" data-toggle="modal" data-target="#modal-infouser">¿Olvido su Nombre de Usuario?</a>
+</div>
+        </div>

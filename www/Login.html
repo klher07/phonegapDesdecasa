@@ -1,0 +1,40 @@
+            <div class="modal-header headModalF">
+
+                <h4 class="modal-title text-center" id="myModalLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden"  name="donde"  id="donde">
+                                <input type="hidden"  name="dondetwo"  id="dondetwo">
+
+                <input type="hidden"  class="guardaroferta"  id="<?= $_REQUEST['id'] ?>">
+
+                <div class="form-group">
+                    <label for="ejemplo_email_1">Email</label>
+                    <input type="email" class="form-control usuario" name="usuario" placeholder="Introduce tu correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ejemplo_password_1">Contraseña</label>
+                    <input type="password" class="form-control clave" name="clave" placeholder="Contraseña" required>
+                </div>
+
+            </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" href="javascript:void(0)" onclick="verificar_datos()">Ingresar</button>
+
+                        <a class="btn btn-info" href="javascript:void(0)" onclick="content_view(2)">Crear Cuenta</a>
+                    <button type="button" class="btn btn-danger" onclick="content_view(0)">Cerrar</button>
+
+                  </div>
+                  <div class="login-res" ></div>
+                  <div class="modal-footer text-right">
+                  <p>Iniciar con:</p>
+                  
+                  <a href="javascript:void(0)" onclick="gplusLogin()"><img width="50" height="50" src="https://www.desdecasa.ec/desdecasaDeveloper/view/img/google.png"></a>
+                       <a href="javascript:void(0)" onclick="loginWithFB();"><img width="40" height="40" src="https://www.desdecasa.ec/desdecasaDeveloper/view/img/facebbok.png"></a>
+                  </div>                     
+                                    <div class="modal-footer">
+                    <a href="javascript:void(0)" data-dismiss="modal" data-toggle="modal" data-target="#modal-recuperacion" class="negroLetra ">¿Olvido su contraseña?</a> |
+                    <a href="javascript:void(0)" class="negroLetra" data-dismiss="modal" data-toggle="modal" data-target="#modal-infouser">¿Olvido su Nombre de Usuario?</a>
+</div>
+
